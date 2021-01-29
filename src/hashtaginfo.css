@@ -1,0 +1,141 @@
+.modal_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50;
+  pointer-events: none;
+}
+.modal_wrap .modal {
+  width: 20vw;
+  height: 300px;
+  border: 2px solid black;
+  background-color: #00af91;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.mask {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal_wrap.visible {
+  pointer-events: initial;
+}
+.modal_wrap.visible .modal {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.modal_wrap.visible .mask {
+  display: block;
+}
+table.modal_table {
+  width: 100%;
+  height: 30%;
+  color: #fff;
+  font-size: 18px;
+}
+
+table.modal_table th {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 24px;
+}
+table.modal_table td {
+  padding: 10px;
+}
+table.modal_table td:nth-of-type(1) {
+  font-weight: bold;
+}
+.contents .contents_header {
+  width: 50vw;
+  height: 5vh;
+  background-color: #00af91;
+  border: 3px solid black;
+}
+
+.contents .contents_header .contents_title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 5vh;
+}
+
+.contents .contents_section {
+  width: 50vw;
+  height: 80vh;
+}
+
+.contents_section .lately_papuler {
+  height: 5vh;
+  border: 2px solid black;
+}
+
+.contents_section .contents_title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 5vh;
+}
+
+.url_list {
+  border: 1px solid #00af91;
+  border-top: 5px solid #00af91;
+  margin: 10px 0;
+  padding: 10px 15px;
+  width: 100%;
+  height: 8vh;
+  overflow-y: auto;
+}
+.url_list::-webkit-scrollbar {
+  width: 5px;
+}
+.url_list::-webkit-scrollbar-thumb {
+  background-color: #00af91;
+}
+.url_list::-webkit-scrollbar-track {
+  background-color: #efefef;
+}
+.url_list .hashtags {
+  width: 100%;
+}
+.url_list ul li {
+  padding: 5px 10px;
+  margin: 5px 3px;
+  border: 1px solid gray;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-animation: all 0.3s;
+}
+
+.url_list ul li.visible {
+  background-color: #00af91;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+}
+
+.btn.nav_left,
+.btn.nav_right {
+  margin-left: 30px;
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
+}
+.btn.nav_left {
+  position: fixed;
+  left: 0;
+}
+.btn.nav_right {
+  margin-right: 30px;
+  position: fixed;
+  right: 0;
+}
