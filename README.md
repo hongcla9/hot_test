@@ -1,5 +1,6 @@
-안녕하세요! 핫셀러 신입사원이 될 홍윤은 입니다. 
-부족한 솜씨이지만 최선을 다 하였습니다. 앞으로도 최선을 다하는 사원이 되겠습니다 :)
+
+welcome to hotsller test!
+
 
 상단에 code 버튼 클릭 => download zip 클릭 => 폴더 압축을 푼다 => 
 파일을 열고 npm i => npm start
